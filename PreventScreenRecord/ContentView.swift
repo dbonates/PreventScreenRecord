@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    init() {
+        ScreenRecordingGuardian.shared.initialize()
+    }
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
